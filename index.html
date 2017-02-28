@@ -7,35 +7,128 @@
   <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
 	<title>Illinois Legal Aid Online</title>
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">  
 	<link rel="stylesheet" href="css/side-menu.css">
+	<link rel="stylesheet" href="css/fonts.css">	
+	<link rel="stylesheet" href="css/component.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="js/main.js"></script>
+	<script src="js/external/modernizr-custom.js"></script>
+	
 </head>
 <body>
 
 	<div id="layout">
     <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
+    <!-- <a href="#menu" id="menuLink" class="menu-link"> -->
         <!-- Hamburger icon -->
-        <span></span>
-    </a>
-
-    <div id="menu">
+        <!-- <span></span> -->
+    <!-- </a> -->
+		<!--  OLD MENU -->
+    <!-- <div id="menu">
         <div class="pure-menu">
             <a class="pure-menu-heading" href="#"><img class="menu-logo" src="img/ilao-logo.png" alt="logo"></a>
 
             <ul class="pure-menu-list">
                 <li class="pure-menu-item"><a href="#" class="pure-menu-link">Who is ILAO</a></li>
                 <li class="pure-menu-item"><a href="#" class="pure-menu-link">Branding</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Voice &amp; Tone</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Voice &amp; Tone</a></li>               
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">UI Patterns</a></li>
+                	
                 <li class="pure-menu-item"><a href="#" class="pure-menu-link">Volunteers</a></li>
                 <li class="pure-menu-item"><a href="#" class="pure-menu-link">Misc</a></li>
                
             </ul>
         </div>
-    </div>
+    </div> -->
+	
+		<div id="menu">
+			<div class="pure-menu">
+				<a class="pure-menu-heading" href="index.html"><img class="menu-logo" src="img/ilao-logo.png" alt="logo"></a>
+				<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu menu-link "></span></button>
+				<nav id="ml-menu" class="menu">
+					<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+					<div class="menu__wrap">
+						<ul data-menu="main" class="menu__level">
+							<li class="menu__item"><a class="menu__link"  href="">Who we are</a></li>
+							<li class="menu__item"><a class="menu__link" data-submenu="submenu-2" href="">Voice &amp; Tone</a></li>
+							<li class="menu__item"><a class="menu__link" data-submenu="submenu-3" href="">Design Components</a></li>
+							<li class="menu__item"><a class="menu__link" data-submenu="submenu-35"href="">Branding</a></li>
+							<li class="menu__item"><a class="menu__link" data-submenu="submenu-4" href="">Volunteers</a></li>
+							<li class="menu__item"><a class="menu__link" data-submenu="submenu-5" href="">Misc</a></li>
+						</ul>																		
+						<!-- Submenu 2 -->
+						<ul data-menu="submenu-2" class="menu__level">
+							<li class="menu__item"><a class="menu__link" href="">Punctuations</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Titles</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Text</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Formatting</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Metadata</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Grammar &amp; Usage</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Spelling</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Names &amp; Terms</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Numbers</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Abbreviations</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Linking</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Citations</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Content Type</a></li>
+						</ul>
+						<!-- Submenu 2-1 -->
+						<ul data-menu="submenu-2-1" class="menu__level">
+							<li class="menu__item"><a class="menu__link" href="">Exotic Mixes</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Wild Pick</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Vitamin Boosters</a></li>
+						</ul>
+						<!-- Submenu 3 -->
+						<ul data-menu="submenu-3" class="menu__level">
+							<li class="menu__item"><a class="menu__link" href="">Color</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Fonts</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Buttons</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Headings</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Blockquotes</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Pop-up box</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Images</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Alerts</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Email</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Promos (Excerpt)</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Type Hierarchy</a></li>							
+							<li class="menu__item"><a class="menu__link" href="">Blankslate</a></li>							
+							<li class="menu__item"><a class="menu__link" href="">Download Links</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Tables</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Videos</a></li>
+						</ul>
+						
+						<!-- Submenu 3 -->
+						<ul data-menu="submenu-35" class="menu__level">							
+							<li class="menu__item"><a class="menu__link" href="">Logo</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Font</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Brand Assets</a></li>
+							<li class="menu__item"><a class="menu__link" target="_blank" href="https://www.illinoislegalaid.org/node/add/support-ticket">Questions</a></li>							
+						</ul>
 
-    <div id="main">
+
+						<!-- Submenu 4 -->
+						<ul data-menu="submenu-4" class="menu__level">
+							<li class="menu__item"><a class="menu__link" href="">Grain Mylks</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Seed Mylks</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Nut Mylks</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Nutri Drinks</a></li>
+							<li class="menu__item"><a class="menu__link" data-submenu="submenu-4-1" href="">Selection</a></li>
+						</ul>
+						<!-- Submenu 4-1 -->
+						<ul data-menu="submenu-4-1" class="menu__level">
+							<li class="menu__item"><a class="menu__link" href="">Nut Mylk Packs</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Amino Acid Heaven</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Allergy Free</a></li>
+						</ul>
+					</div>
+				</nav>				
+			</div>
+		</div>
+
+
+
+
+			<div id="main">
         <div class="header">
             <h1>Illinois Legal Aid Online Styleguide</h1>
             <h2>The one place for all your styling needs</h2>
@@ -46,33 +139,82 @@
             <p>
                 To use this styleguide, you can refer to the sidemenu or below for different areas of styling including some things we weren't sure of inside the <b>Misc</b> section of the website
             </p>
-            
-
-            <div class="pure-g">
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
-                </div>
-            </div>
-
-            <h2 class="content-subhead">Try Resizing your Browser</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
+            <h2 class="content-subhead">Styleguide</h2>
+        </div>    						
+				<div class="full-width">					
+          <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">                		
+                  <img class="pure-img" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                  <img class="pure-img" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                  <img class="pure-img" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                  <img class="pure-img" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                  <img class="pure-img" src="img/1.jpg" alt="Mountain">
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                  <img class="pure-img" src="img/2.jpg" alt="Mountain">
+              </div>
+          </div>
+         </div>			
     </div>
-	</div>
+	</div> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/external/ui.js"></script>
+	<script src="js/data/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/external/classie.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
 
-	<script src="js/ui.js"></script>
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
 
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('#main');
+
+		function loadDummyData(ev, itemName) {			
+			
+			var url = ev.target;
+			if(url.getAttribute("href") == ""){			
+				ev.preventDefault();
+				closeMenu();
+				gridWrapper.innerHTML = '';
+				classie.add(gridWrapper, 'content--loading');
+				setTimeout(function() {
+					classie.remove(gridWrapper, 'content--loading');
+					gridWrapper.innerHTML = dummyData[itemName];
+				}, 700);
+			}
+		}
+	})();
+	</script>
 	
 </body>
 </html>

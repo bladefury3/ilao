@@ -1,0 +1,51 @@
+/*BASIC BRANDING FONTS*/
+h1{
+	font-size: 28px;
+	font-family: 'antonioregular', 'oswaldregular';
+}
+
+h2, .content-subhead{
+	color: #505050;
+	font-size: 24px;
+	font-family: 'antonioregular', 'oswaldregular';
+}
+
+h3{
+	font-size: 20px;
+	font-family: 'archivo_narrowregular';	
+}
+
+h4{
+	font-size: 14px;
+	font-family: 'quicksandbold';
+}
+
+h5{
+	font-size: 16px;
+	font-family: 'quicksandregular';
+}
+
+p{
+	font-size: 16px;
+	font-family: 'quattrocento_sansregular';
+	color: #000;
+	line-height: 26px;
+}
+
+.pure-menu-item{
+	font-size: 20px;
+	font-family: "archivo_narrowregular";
+}
+
+.full-width{
+	background: rgb(250, 250, 250);
+  margin: 2em auto;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+}
+.menu__link{
+	font-size: 20px;
+	font-family: 'archivo_narrowregular';
+	text-decoration: none;
+}
